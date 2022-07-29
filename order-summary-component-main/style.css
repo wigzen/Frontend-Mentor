@@ -1,0 +1,128 @@
+:root {
+  --primary-pale-blue: hsl(225, 100%, 94%);
+  --primary-blue: hsl(245, 75%, 52%);
+  --neutral-pale-blue: hsl(225, 100%, 98%);
+  --neutral-desat-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(233, 47%, 23%);
+}
+html {
+  font-size: 62.5%; /*10px == 1rem */
+  height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+}
+h1,h2,h3{
+  line-height: 1.1;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color:var(--primary-pale-blue);
+  font-size: 1.6rem;
+}
+.card{
+  max-width:350px ;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+}
+.hero-img{
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.card__content{
+  padding: 20px 40px;
+  text-align: center;
+
+
+}
+.card_header{
+  /* font-size: 1rem; */
+  /* padding: 0px 40px; */
+  /* text-align: center; */
+  color: var(--neutral-desat-blue);
+  margin-bottom: 15px;
+}
+.card_heading{
+  color: var(--dark-blue);
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+.card__desc{
+  font-size: 15px;
+}
+.card__price{
+  border-radius: 10px;
+  background-color: var( --neutral-pale-blue);
+  margin-bottom: 25px;
+}
+.hold{
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left .span{
+margin-left: 20px;
+}
+.span h4{
+  font-weight: 700;
+  font-size: 12px;
+  color: var(--dark-blue);
+}
+.span p{
+  /* font-weight: 700; */
+  font-size: 12px;
+  color: var(--neutral-desat-blue);
+}
+.link{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  transition: opacity ease 0.3s;
+}
+.link:hover,.link:active{
+  opacity: 0.6;
+}
+.card__btn{
+  font-weight: 700;
+  font-size: 16px;
+  background-color: var(--primary-blue);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 1px 12px 20px 5px hsl(245deg 75% 52% / 20%);
+  transition: opacity ease 0.3s;
+}
+.card__btn:hover,
+.card__btn:active{
+opacity: 0.6;
+}
+
+.card__btn-cancel{
+  color:var(--neutral-desat-blue);
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  transition: color 0.3s;
+}
+.card__btn-cancel:hover,
+.card__btn-cancel:active{
+  color: var(--dark-blue);
+}
